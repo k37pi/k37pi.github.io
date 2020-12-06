@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<!--    <meta name = "viewport" content = "width = device-width, intial-scale=1"> -->
+    <head>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        <script src = "go.js"></script>
+        <script src = "music.js"></script>
+
+
+    <title>KP</title>
+    </head>
+
+    <body style="background-image: url('img/bg3.jpg');background-size: cover;">
+       <!-- <h1>MUSIC</h1> -->
+        <div id="go"></div>
+
+
+        <div class = "music">
+            <form onsubmit="minor(); return false;">
+                <input type="text" id="min_name" placeholder = "Enter Key (chromatic, A#, b etc)">
+                <input type="submit" value = "Minor">
+            </form>
+
+            <div id="min" class="minmaj">
+          <!--      Minor Scale: -->
+            </div>
+
+
+            <form onsubmit="major(); return false;">
+                <input type="text" id="maj_name" placeholder = "Enter Key">
+                <input type="submit" value = "Major">
+            </form>
+            <div id="maj" class="minmaj">
+<!--                Major Scale: -->
+            </div>
+
+            <div>
+            <form onsubmit="chord(); return false;">
+                <input type="text" id="note" placeholder = "Enter Note">
+                <input type="submit" value = "Chord">
+            </form>
+            <div id="mc" class="minmaj">
+<!--                Minor Chord: -->
+            </div>
+            <div id="m7c" class="minmaj">
+<!--                Minor Chord: -->
+            </div>
+            <div id="m9c" class="minmaj">
+<!--                Minor Chord: -->
+            </div>
+            <div id="Mc" class="minmaj">
+<!--                Major Chord: -->
+            </div>
+            <div id="M7c" class="minmaj">
+<!--                Major Chord: -->
+            </div>
+            <div id="Maj7c" class="minmaj">
+<!--                Major 7 Chord: -->
+            </div>
+
+            <div id="M9c" class="minmaj">
+<!--                Minor Chord: -->
+            </div>
+
+            </div>
+        </div>
+
+    </body>
+
+
+</html>

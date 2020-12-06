@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        <script src = "go.js"></script>
+        <title>KP</title>
+    </head>
+
+    <body style="background-image: url('img/home.jpg');  background-repeat: no-repeat;   background-size: cover;" id = "bg">
+        <h1 style="color:pink" id = "mainhead">Hello, is there anybody in there ?</h1>
+        <div id="go"></div>
+    </body>
+    <button id = "nod">nod</button>
+    <script>
+            var T = true;
+            document.querySelector("#nod").onclick = function(){
+                if(T){
+                document.querySelector("body").style.backgroundImage = "url('img/bg6.jpg')";
+                document.querySelector("#mainhead").textContent = "Is there anyone at home?";
+                document.querySelector("#nod").textContent = "bye"
+                T = false;
+                }
+                else{
+                document.querySelector("body").style.backgroundImage = "url('img/home.jpg')";
+                document.querySelector("#mainhead").textContent = "Hello, is there anybody in there ?";
+                document.querySelector("#nod").textContent = "nod"
+                T = true;
+                }
+            }
+    </script>
+
+
+
+</html>

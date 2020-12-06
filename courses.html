@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+        <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src = "go.js"></script>
+
+        <title>KP</title>
+        <h1>Courses that I have taken.</h1>
+        <div id = "go"></div>
+    </head>
+
+    <body style = "background-color:powderblue">
+
+    </body>
+
+
+<script>
+function myFunction(elem) {
+  var x = document.getElementById("js-description");
+  var description = elem.getAttribute('data-description');
+  x.innerHTML = description;
+
+  var button = document.getElementsByClassName('js-button');
+
+  for (var i = 0; i < button.length; i++) {
+    button[i].classList.remove('active-button');
+  }
+
+  elem.classList.add('active-button');
+}
+</script>
+
+<style>
+  .default-button{
+    font-size:16px;
+    border-radius: 4px;
+    padding:7px 12px;
+  }
+  .active-button{
+    background:blue;
+    color:#fff;
+  }
+  .description{
+    margin-top:20px;
+  }
+</style>
+
+<script>
+// Native JS version
+// Working Fiddle : https://jsfiddle.net/d34cbtw7/
+var togglers = document.querySelectorAll('[data-toggle="tab"]');
+
+for (var i = 0; i < togglers.length; i++) {
+    togglers[i].addEventListener('click', function() {
+        var tabs = document.querySelectorAll('.tab');
+        for(var j = 0; j < tabs.length; j++) {
+            tabs[j].classList.remove('active');
+        }
+        var $target = document.querySelector(this.getAttribute('data-target'));
+        $target.classList.add('active');
+    });
+}
+
+// jQuery version
+$('body').on('click', '[data-toggle="tab"]', function(e) {
+  e.preventDefault();
+  // Select our target
+  var $target = $($(this).data('target'));
+  // Hide all tabs
+  $('.tab-contents .tab').removeClass('active');
+  // Show only $target tab
+  $target.addClass('active');
+});
+</script>
+
+<style>
+.tab-contents .tab {
+  display: none;
+}
+.tab-contents .tab.active {
+  display: block;
+}
+</style>
+
+<button data-toggle="tab" data-target="#cat-A-content">
+ B. Tech.
+</button>
+<button data-toggle="tab" data-target="#cat-B-content">
+ B. Sc.
+</button>
+<button data-toggle="tab" data-target="#cat-C-content">
+ PGD
+</button>
+<button data-toggle="tab" data-target="#cat-D-content">
+ M. Sc.
+</button>
+<button data-toggle="tab" data-target="#cat-E-content">
+ Audited
+</button>
+<button data-toggle="tab" data-target="#cat-F-content">
+ EdX
+</button>
+
+
+
+<div class="tab-contents">
+  <div class="tab active" id="cat-A-content">
+          <h3>B.Tech. 2014-2018 : Electronics and Telecommunications: 7.64/10 <a href = "https://kjsce-old.somaiya.edu/kjsce-old/academic/department/19/electronics__telecommunication_engineering#syllabus" target = "_blank">Syllabus</a></h3>
+          <h4>KJ Somaiya College of Engineering, Mumbai</h4>
+              <ul>
+                  <li>Semester 1</li>
+                      <ol>
+                          <li>Applied Mathematics I: 10/10</li>
+                          <li>Applied Physics I: 8/10</li>
+                          <li>Applied Chemistry I: 8/10</li>
+                          <li>Engineering Mechanics: 4/10</li>
+                          <li>Fundamentals of Computer Programming: 6/10</li>
+                          <li>Environment Studies: 9/10</li>
+                          <li>Applied Science I Laboratory: 9/10</li>
+                          <li>Engineering Mechanics Laboratory: 9/10</li>
+                          <li>Fundamentals of Computer Programming Laboratory: 8/10</li>
+                          <li>Workshop Practice I: 7/10</li>
+                      </ol>
+                  <li>Semester 2</li>
+                      <ol>
+                          <li>Applied Mathematics II: 10/10</li>
+                          <li>Applied Physics II: 7/10</li>
+                          <li>Applied Chemistry II: 6/10</li>
+                          <li>Engineering Graphics: 6/10</li>
+                          <li>Basic Electrical and Electronics Engineering: 8/10</li>
+                          <li>Communication Skills: 9/10</li>
+                          <li>Applied Science II Laboratory: 9/10</li>
+                          <li>Engineering Graphics Laboratory: 9/10</li>
+                          <li>Basic Electrical and Electronics Engineering Laboratory: 10/10</li>
+                          <li>Workshop Practice II: 9/10</li>
+                      </ol>
+                  <li>Semester 3</li>
+                      <ol>
+                          <li>Applied Mathematics III: 10/10</li>
+                          <li>Analog Electronics I: 6/10</li>
+                          <li>Digital Logic Design: 7/10</li>
+                          <li>Electrical Networks: 6/10</li>
+                          <li>Data Analysis and Interpretation: 8/10</li>
+                          <li>Analog Electronics I Laboratory: 10/10</li>
+                          <li>Digital Logic Design Laboratory: 9/10</li>
+                          <li>Basic Electrical and Electronics Engineering Laboratory: 10/10</li>
+                          <li>Workshop Practice II: 9/10</li>
+                      </ol>
+                  <li>Semester 4 : !! Course Listing Not Found !!</li>
+                  <li>Semester 5</li>
+                      <ol>
+                          <li>Communication Systems: 7/10</li>
+                          <li>Random Signals and Processes: 10/10</li>
+                          <li>RF Filters and Antennas: 4/10</li>
+                          <li>Microprocessor and Microcontroller: 4/10</li>
+                          <li>Integrated Circuits: 6/10</li>
+                          <li>Communication Systems Laboratory I: 9/10</li>
+                          <li>Microprocessor and Microcontroller Laboratory: 8/10</li>
+                          <li>Integrated Circuits Laboratory: 9/10</li>
+                          <li>Data Structures and Analysis of Algorithms Laborartory: 10/10</li>
+                      </ol>
+                  <li>Semester 6</li>
+                      <ol>
+                          <li>Digital Signal Processing: 4/10</li>
+                          <li>Digital Communication: 6/10</li>
+                          <li>VLSI Design: 4/10</li>
+                          <li>Computer Communication Network: 5/10</li>
+                          <li>Operating System: 6/10</li>
+                          <li>Basic Automobile Engineering: 7/10</li>
+                          <li>Digital Signal Processing Laboratory: 8/10</li>
+                          <li>Communication Systems Laboratory II: 9/10</li>
+                          <li>VLSI Design Laborartory: 10/10</li>
+                          <li>Mini Project: 10/10</li>
+                          <li>Advanced Microcontroller Laborartory: 8/10</li>
+                      </ol>
+                  <li>Semester 7</li>
+                      <ol>
+                          <li>Wireless Communication: 4/10</li>
+                          <li>Microwave Engineering: 4/10</li>
+                          <li>Image Processing: 8/10</li>
+                          <li>Neural Networks and Fuzzy Logic: 8/10</li>
+                          <li>Economics and Management: 10/10</li>
+                          <li>Wireless Communication Laboratory: 9/10</li>
+                          <li>Microwave Engineering Laboratory: 9/10</li>
+                          <li>Image Processing Laboratory: 9/10</li>
+                          <li>Neural Networks and Fuzzy Logic Laboratory: 9/10</li>
+                          <li>Project I: 9/10</li>
+                     </ol>
+                  <li>Semester 8</li>
+                     <ol>
+                          <li>Optical Fiber Communication: 5/10</li>
+                          <li>Cryptography and System Security: 6/10</li>
+                          <li>Big Data Analytics: 6/10</li>
+                          <li>Network Security: 7/10</li>                                                    <li>Optical Fiber Communication: 5/10</li>
+                          <li>Cryptography and System Security Laboratory: 9/10</li>
+                          <li>Big Data Analytics Laboratory: 9/10</li>
+                          <li>Network Security Laboratory: 9/10</li>
+                          <li>Project II: 10/10</li>
+              </ul>
+
+  </div>
+  <div class="tab" id="cat-B-content">
+        <h3>B.Sc. 2014-2017: Mathematics: 6.6/7 <a href =  "https://old-kjssc.somaiya.edu/old-kjssc/academic/department/46/mathematics#syllabus"  target = "_blank">Syllabus</a></h3>
+        <h4>KJ Somaiya College of Science and Commerce, Mumbai</h4>
+              <ul>
+                  <li>Semester 1</li>
+                      <ol>
+                          <li>Physics Paper I: A</li>
+                          <li>Physics Paper II: A</li>
+                          <li>Physics Practical: O</li>
+                          <li>Mathematics Paper I: O</li>
+                          <li>Mathematics Paper II: C</li>
+                          <li>Statistics Paper I: O</li>
+                          <li>Statistics Paper II: O</li>
+                          <li>Statistics Practical: A</li>
+                      </ol>
+                  <li>Semester 2</li>
+                       <ol>
+                          <li>Physics Paper I: C</li>
+                          <li>Physics Paper II: A</li>
+                          <li>Physics Practical: O</li>
+                          <li>Mathematics Paper I: O</li>
+                          <li>Mathematics Paper II: O</li>
+                          <li>Statistics Paper I: O</li>
+                          <li>Statistics Paper II: A</li>
+                          <li>Statistics Practical: A</li>
+                       </ol>
+                  <li>Semester 3</li>
+                       <ol>
+                          <li>Mathematics Paper I: O</li>
+                          <li>Mathematics Paper II: O</li>
+                          <li>Mathematics Paper III: O</li>
+                          <li>Statistics Paper I: O</li>
+                          <li>Statistics Paper II: O</li>
+                          <li>Statistics Paper III: D</li>
+                          <li>Statistics Practical: O</li>
+                       </ol>
+                  <li>Semester 4</li>
+                       <ol>
+                          <li>Mathematics Paper I: O</li>
+                          <li>Mathematics Paper II: O</li>
+                          <li>Mathematics Paper III: O</li>
+                          <li>Statistics Paper I: O</li>
+                          <li>Statistics Paper II: O</li>
+                          <li>Statistics Paper III: O</li>
+                          <li>Statistics Practical: O</li>
+                       </ol>
+                  <li>Semester 5</li>
+                       <ol>
+                          <li>Mathematics Paper I: O</li>
+                          <li>Mathematics Paper II: O</li>
+                          <li>Mathematics Practical I: O</li>
+                          <li>Mathematics Paper III: O</li>
+                          <li>Mathematics Paper IV: O</li>
+                          <li>Mathematics Practical II: O</li>
+                          <li>Computer Programming and System Analysis: O</li>
+                          <li>Computer Programming and System Analysis Practical: O</li>
+                       </ol>
+                  <li>Semester 6</li>
+                       <ol>
+                          <li>Mathematics Paper I: O</li>
+                          <li>Mathematics Paper II: A</li>
+                          <li>Mathematics Practical I: O</li>
+                          <li>Mathematics Paper III: O</li>
+                          <li>Mathematics Paper IV: O</li>
+                          <li>Mathematics Practical II: O</li>
+                          <li>Computer Programming and System Analysis: O</li>
+                          <li>Computer Programming and System Analysis Practical: O</li>
+                       </ol>
+              </ul>
+  </div>
+  <div class="tab" id="cat-C-content">
+      <h3>PGD 2018-2019: Data Science: 3.26/4 <a href = "https://www.iiitb.ac.in/pg-diploma-data-science" target="_blank">Syllabus</a></h3>
+      <h4>IIIT, Bangalore</h4>
+      <ol>
+          <li>Introduction to Data Management: B</li>
+          <li>Statistics and Exploratory Data Analysis: B</li>
+          <li>Introduction to Predictive Analysis 1: A-</li>
+          <li>Introduction to Predictive Analysis 2: B-</li>
+          <li>Big Data and Analytics: B+</li>
+          <li>(Elective) Health Care Analysis: B+</li>
+          <li>Capstone Project: B+</li>
+      </ol>
+  </div>
+  <div class="tab" id="cat-D-content">
+       <h3>M.Sc. 2017- 2019: Engineering Mathematics: 8.49/10 <a href = "https://www.ictmumbai.edu.in/DisplayDeptPage.aspx?page=caaci&ItemID=caako&nDeptID=ca" target = "_blank">Syllabus</a></h3>
+       <h4>ICT, Mumbai</h4>
+           <ul>
+                <li>Semester 1</li>
+                    <ol>
+                        <li>Computer Programming: 8</li>
+                        <li>Applied Linear Algebra: 10</li>
+                        <li>Advanced Calulus: 10</li>
+                        <li>Differential Equations I: 10</li>
+                        <li>Algebra: 9</li>
+                        <li>Applied Statistics I: 10</li>
+                        <li>Numerical Methods: 10</li>
+                    </ol>
+                <li>Semester 2</li>
+                    <ol>
+                        <li>Software Lab I: 10</li>
+                        <li>Optimization Techniques: 7</li>
+                        <li>Complex Analysis and Mathematical Methods: 9</li>
+                        <li>Advanced Real Analysis: 8</li>
+                        <li>Differential Equations II: 10</li>
+                        <li>Applied Statistics II: 7</li>
+                        <li>Numerical Methods II: 9</li>
+                    </ol>
+                <li>Semester 3</li>
+                    <ol>
+                        <li>Software Lab II: 8</li>
+                        <li>Seminar: 9</li>
+                        <li>Momentum Heat and Mass Transfer: 10</li>
+                        <li>Number Theory: 10</li>
+                        <li>Applied Statistics III: 6</li>
+                        <li>Machine Learning: 10</li>
+                        <li>Mathematical Finance: 6.5</li>
+                    </ol>
+                <li>Semester 4</li>
+                    <ol>
+                        <li>Project: 10</li>
+                        <li>Computational Fluid Dynamics: 7</li>
+                        <li>Applied Functional Analysis: 6.5</li>
+                        <li>Coding Theory and Cryptography: 9</li>
+                        <li>Stochastic Processes: 6</li>
+                        <li>Finite Element Method: 10</li>
+                    </ol>
+            </ul>
+  </div>
+  <div class="tab" id="cat-E-content">
+      <h3>Audited</h3>
+          <ol>
+              <li>Numerical Methods and Programming, 2019, CSIR-NCL</li>
+              <li>Algorthims, 2020, CSIR-NCL</li>
+          </ol>
+  </div>
+  <div class="tab" id="cat-F-content">
+      <h3>EdX</h3>
+          <ol>
+              <li>CS50's Introduction to Computer Science, 2020, HarvardX</li>
+          </ol>
+  </div>
+
+
+</div>
