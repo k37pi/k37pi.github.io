@@ -1,5 +1,14 @@
 <!DOCTYPE html>
 
+<style>
+.aParent div {
+    width: 35%;
+    float: left;
+    clear: none;
+    margin: auto;
+}
+</style>
+
 <html lang="en">
     <head>
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
@@ -17,10 +26,11 @@
         <div id="go"></div>
     </body>
 
-<div class = "container">
-  <div class="card text-white bg-info mb-3">
+<!--<div class = "container"> -->
+<!--<div class="aParent"> -->
+  <div class="card text-white bg-info mb-3" style = "height: 100;">
     <div class="card-header">Courses</div>
-    <img class="card-img-top" src="img/crs.jpg" alt="Courses">
+    <img class="card-img-top" src="img/crs.jpg" alt="Courses" style="width:462px;height:300px;">
     <div class="card-body">
       <p class="card-text">Courses that I have taken since 2014.</p>
       <a href="courses.html" class="btn btn-warning " role="button" aria-pressed="true" id = "crs">Courses</a>
@@ -29,32 +39,36 @@
 
   <div class="card text-white bg-dark mb-3 ">
     <div class="card-header">Video Games</div>
-    <img class="card-img-top" src="img/vg.png" alt="VG">
+    <img class="card-img-top" src="img/vg.png" alt="VG" style="width:462px;height:300px;">
     <div class="card-body">
       <p class="card-text">My favourite video games.</p>
-      <a href="courses.html" class="btn btn-info " role="button" aria-pressed="true" id = "crs">Video Games</a>
+      <a href="vg.html" class="btn btn-info " role="button" aria-pressed="true" id = "crs">Video Games</a>
     </div>
   </div>
 
   <div class="card text-white bg-secondary mb-3 ">
     <div class="card-header">Songs</div>
-    <img class="card-img-top" src="img/cn.jpg" alt="VG">
+    <img class="card-img-top" src="img/cn.jpg" alt="Songs" style="width:462px;height:300px;">
     <div class="card-body">
       <p class="card-text">My favourite songs. I don't like all songs from all albums.</p>
-      <a href="courses.html" class="btn btn-dark " role="button" aria-pressed="true" id = "crs">Songs</a>
+      <a href="songs.html" class="btn btn-dark " role="button" aria-pressed="true" id = "crs">Songs</a>
     </div>
   </div>
 
   <div class="card text-white bg-warning mb-3 ">
     <div class="card-header">Albums</div>
-    <img class="card-img-top" src="img/okcomputer1.jpg" alt="VG">
+    <img class="card-img-top" src="img/okcomputer1.jpg" alt="Albums" style="width:462px;height:300px;">
     <div class="card-body">
       <p class="card-text">There's something about these groups of songs.</p>
-      <a href="courses.html" class="btn btn-secondary " role="button" aria-pressed="true" id = "crs">Albums</a>
+      <a href="albums.html" class="btn btn-secondary " role="button" aria-pressed="true" id = "crs">Albums</a>
     </div>
   </div>
-</div>
 
+<!-- </div> -->
+</html>
+<!-- </div> -->
+
+<!--
 <div class = "container">
   <div class="card text-white bg-warning mb-3 ">
     <div class="card-header">Numbers</div>
@@ -84,5 +98,5 @@
   </div>
 
 </div>
+-->
 
-</html>
