@@ -15,24 +15,23 @@
 
         <title>KP</title>
         <h1>I really like this number.</h1>
-        <p> When we multiply 37 with a multiple of 3, something interesting happens.</p>
-               <div style="font-family:'Calibri'; font-size:18.7px" >
-        <b>
-            <p> When we multiply 37 with a multiple of 3, something interesting happens.</p>
-            <p>Consider the first multiple of 3, which is 3. 37 x 3 = 111. If a = 1,2,3,...,9; then 37 x 3 x a = aaa. </p>
-            <p>If 9 < a < 100, then let a = (xy), where (xy) = 10x+y. Then, 37 x 3 x a = 37 x 3 x (xy). This is essentially 111(xy) = 111[10x + y] = 1000x + 100[x+y] + 10[x+y] + y.</p>
-            <p>Let x + y < 10, Consider 111(xy) = 1000x + 100[x+y] + 10[x+y] + y. Since [x+y] < 10, there will be no carry forwards to the next digits place while adding. Hence the product can easily be calculated as, [x] at the 1000s place, [x+y] at each the hundereds and tens place and [y] at the units. </p>
-            <p>For example, 37 x 39 = 37 x 3 x 13. (xy) = 13, x = 1, y = 3. x+y = 4 < 10. Hence 37 x 39 = 1443 [x = 1, x+y = 4, y =3].</p>
-            <p>Now let x + y > 10. Consider 111(xy) = 1000x + 100[x+y] + 10[x+y] + y. Now since [x+y] > 10, let x+y = (1t). The maximum value that (1t) will take is 18, when x = y = 9. Now there will be a carry foward from tens to hundreds digit and from hundreds digit to thousands. The product will be calculated as, [x+1] at the 1000s place, [t+1] at the 100s place, [t] at the tens place and [y] at the units. </p>
-            <p>For example, 37 x 177 = 37 x 3 x 59. (xy) = 59, x = 5, y = 9. x+y = 14 = (1t), t = 4. Hence 37 x 177 = 6549 [x+1 = 5, t+1 = 5, t = 4, y = 9].</p>
-            <p>Another example, 37 x 297 = 37 x 3 x 99. (xy) = 99, x = 9, y = 9. x+y = 18 = (1t), t = 8. Hence 37 x 297 = 10989 [x+1 = 10, t+1 = 9, t = 8, y = 9].</p>
-            <p>If 99 < a < 1000, then let a = (xyz), where (xyz) = 100x + 10y + z. Then 37 x 3 x a = 111(xyz) = 10000[x] + 1000[x+y] + 100[x+y+z] + 10[y+z] + z. Without even considering values of [x,y,z] it is so cool that we can already see the contribution of each digit on the multiplication. </p>
-            <p>Now we are interested in the sums [x+y], [x+y+z] and [y+z]. If all are less than 10, then we simply put [x,x+y,x+y+z,y+z,z] in the [10000,1000,100,10,1]s place to get the product.</p>
-            <p>For example, 37 x 324 = 37 x 3 x 108. (xyz) = 108, x = 1, y = 0, z = 8. x = 1, x+y = 1, x+y+z = 9, y+z=8, z = 8. Hence 37 x 504 = 11988 [x = 1, x+y = 1, x+y+z = 9, y+z = 8, z = 8].</p>
-            <p>As we increase a, and/or the value of the sums moves above or below 10, similar cascading effects can be seen. Try for yourself below!</p>
-        </b>
+        
+        <div style="font-family:'Calibri'; font-size:18.7px" >
+            <b>
+                <p> When we multiply 37 with a multiple of 3, something interesting happens.</p>
+                <p>Consider the first multiple of 3, which is 3. 37 x 3 = 111. If a = 1,2,3,...,9; then 37 x 3 x a = aaa. </p>
+                <p>If 9 < a < 100, then let a = (xy), where (xy) = 10x+y. Then, 37 x 3 x a = 37 x 3 x (xy). This is essentially 111(xy) = 111[10x + y] = 1000x + 100[x+y] + 10[x+y] + y. Clearly 111 plays an important role here, but 111 = 37x3, so it's actually 37 and 3 who are the stars.</p>
+                <p>Let x + y < 10, Consider 111(xy) = 1000x + 100[x+y] + 10[x+y] + y. Since [x+y] < 10, there will be no carry forwards to the next digits place while adding. Hence the product can easily be calculated as, [x] at the 1000s place, [x+y] at each the hundereds and tens place and [y] at the units. </p>
+                <p>For example, 37 x 39 = 37 x 3 x 13. (xy) = 13, x = 1, y = 3. x+y = 4 < 10. Hence 37 x 39 = 1443 [x = 1, x+y = 4, y =3].</p>
+                <p>Now let x + y > 10. Consider 111(xy) = 1000x + 100[x+y] + 10[x+y] + y. Now since [x+y] > 10, let x+y = (1t). The maximum value that (1t) will take is 18, when x = y = 9. Now there will be a carry foward from tens to hundreds digit and from hundreds digit to thousands. The product will be calculated as, [x+1] at the 1000s place, [t+1] at the 100s place, [t] at the tens place and [y] at the units. </p>
+                <p>For example, 37 x 177 = 37 x 3 x 59. (xy) = 59, x = 5, y = 9. x+y = 14 = (1t), t = 4. Hence 37 x 177 = 6549 [x+1 = 5, t+1 = 5, t = 4, y = 9].</p>
+                <p>Another example, 37 x 297 = 37 x 3 x 99. (xy) = 99, x = 9, y = 9. x+y = 18 = (1t), t = 8. Hence 37 x 297 = 10989 [x+1 = 10, t+1 = 9, t = 8, y = 9].</p>
+                <p>If 99 < a < 1000, then let a = (xyz), where (xyz) = 100x + 10y + z. Then 37 x 3 x a = 111(xyz) = 10000[x] + 1000[x+y] + 100[x+y+z] + 10[y+z] + z. </p>
+                <p>Now we are interested in the sums [x+y], [x+y+z] and [y+z]. If all are less than 10, then we simply put [x,x+y,x+y+z,y+z,z] in the [10000,1000,100,10,1]s place to get the product.</p>
+                <p>For example, 37 x 324 = 37 x 3 x 108. (xyz) = 108, x = 1, y = 0, z = 8. x = 1, x+y = 1, x+y+z = 9, y+z=8, z = 8. Hence 37 x 504 = 11988 [x = 1, x+y = 1, x+y+z = 9, y+z = 8, z = 8].</p>
+                <p>As we increase a, and/or the value of the sums moves above or below 10, similar cascading effects can be seen. Try for yourself below!</p>
+            </b>
         </div>
-
         <div id = "go"></div>
     </head>
 
