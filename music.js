@@ -88,7 +88,7 @@ function chord()
            var M7 = [chrom[(i)%12],chrom[(i+4)%12],chrom[(i+7)%12],chrom[(i+10)%12]];
            var Maj7 = [chrom[(i)%12],chrom[(i+4)%12],chrom[(i+7)%12],chrom[(i+11)%12]];
            var M9 = [chrom[(i)%12],chrom[(i+4)%12],chrom[(i+7)%12],chrom[(i+2)%12]];
-           j++;
+           j++;  
            break;
           }
       }
