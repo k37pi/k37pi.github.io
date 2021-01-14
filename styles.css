@@ -53,12 +53,32 @@ input[type=submit] {
   width:60%;
 }
 
+.minmaj1 {
+  color:yellow;
+  font-size:180%;
+  background-color:black;
+  opacity:0.7;
+  width:50%;
+}
+
+
 .multts {
   color:yellow;
   font-size:180%;
   background-color:black;
   opacity:0.7;
   width:20%;
+}
+
+.aParent div {
+    width: 48%;
+    float: left;
+    clear: none;
+}
+
+.center {
+  margin: auto;
+  width: 70%;
 }
 
 
