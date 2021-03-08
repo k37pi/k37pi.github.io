@@ -15,7 +15,7 @@ function minor()
          {
           if (name.charAt(0).toUpperCase() + name.slice(1) === chrom[i])
              {
-               op = [chrom[(i)%12],chrom[(i+2)%12],chrom[(i+3)%12],chrom[(i+5)%12],chrom[(i+7)%12],chrom[(i+8)%12],chrom[(i+10)%12]];
+               op = [chrom[(i)%12].toLowerCase(),chrom[(i+2)%12].toLowerCase(),chrom[(i+3)%12].toUpperCase(),chrom[(i+5)%12].toLowerCase(),chrom[(i+7)%12].toLowerCase(),chrom[(i+8)%12].toUpperCase(),chrom[(i+10)%12].toUpperCase()];
                j++;
                break;
               }
