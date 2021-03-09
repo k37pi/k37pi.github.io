@@ -15,15 +15,15 @@ function minor()
          {
           if (name.charAt(0).toUpperCase() + name.slice(1) === chrom[i])
              {
-               var one = chrom[(i)%12].charAt(0).toLowerCase() + chrom[(i)%12].slice(1)
-               var two = chrom[(i+2)%12].charAt(0).toLowerCase() + chrom[(i+2)%12].slice(1) + ' dim'
-               var thr = chrom[(i+3)%12].charAt(0).toUpperCase() + chrom[(i+3)%12].slice(1)
-               var fou = chrom[(i+5)%12].charAt(0).toLowerCase() + chrom[(i+5)%12].slice(1)
-               var fiv = chrom[(i+7)%12].charAt(0).toLowerCase() + chrom[(i+7)%12].slice(1)
-               var six = chrom[(i+8)%12].charAt(0).toUpperCase() + chrom[(i+8)%12].slice(1)
-               var sev = chrom[(i+10)%12].charAt(0).toUpperCase() + chrom[(i+10)%12].slice(1)
+               var one = chrom[(i)%12].charAt(0).toLowerCase() + chrom[(i)%12].slice(1) + ' '
+               var two = chrom[(i+2)%12].charAt(0).toLowerCase() + chrom[(i+2)%12].slice(1) + ' dim '
+               var thr = chrom[(i+3)%12].charAt(0).toUpperCase() + chrom[(i+3)%12].slice(1) + ' '
+               var fou = chrom[(i+5)%12].charAt(0).toLowerCase() + chrom[(i+5)%12].slice(1) + ' '
+               var fiv = chrom[(i+7)%12].charAt(0).toLowerCase() + chrom[(i+7)%12].slice(1) + ' '
+               var six = chrom[(i+8)%12].charAt(0).toUpperCase() + chrom[(i+8)%12].slice(1) + ' '
+               var sev = chrom[(i+10)%12].charAt(0).toUpperCase() + chrom[(i+10)%12].slice(1) + ' '
 
-               op = [one," ",two," ",thr," ",fou," ",fiv," ",six," ",sev];
+               op = [one,two,thr,fou,fiv,six,sev];
                j++;
                break;
               }
@@ -59,15 +59,15 @@ function major()
          {
           if (name.charAt(0).toUpperCase() + name.slice(1) === chrom[i])
              {
-               var one = chrom[(i)%12].charAt(0).toUpperCase() + chrom[(i)%12].slice(1)
-               var two = chrom[(i+2)%12].charAt(0).toLowerCase() + chrom[(i+2)%12].slice(1)
-               var thr = chrom[(i+4)%12].charAt(0).toLowerCase() + chrom[(i+4)%12].slice(1)
-               var fou = chrom[(i+5)%12].charAt(0).toUpperCase() + chrom[(i+5)%12].slice(1)
-               var fiv = chrom[(i+7)%12].charAt(0).toUpperCase() + chrom[(i+7)%12].slice(1)
-               var six = chrom[(i+9)%12].charAt(0).toLowerCase() + chrom[(i+9)%12].slice(1)
-               var sev = chrom[(i+11)%12].charAt(0).toLowerCase() + chrom[(i+11)%12].slice(1) + ' dim'
+               var one = chrom[(i)%12].charAt(0).toUpperCase() + chrom[(i)%12].slice(1) + ' '
+               var two = chrom[(i+2)%12].charAt(0).toLowerCase() + chrom[(i+2)%12].slice(1) + ' '
+               var thr = chrom[(i+4)%12].charAt(0).toLowerCase() + chrom[(i+4)%12].slice(1) + ' '
+               var fou = chrom[(i+5)%12].charAt(0).toUpperCase() + chrom[(i+5)%12].slice(1) + ' '
+               var fiv = chrom[(i+7)%12].charAt(0).toUpperCase() + chrom[(i+7)%12].slice(1) + ' '
+               var six = chrom[(i+9)%12].charAt(0).toLowerCase() + chrom[(i+9)%12].slice(1) + ' '
+               var sev = chrom[(i+11)%12].charAt(0).toLowerCase() + chrom[(i+11)%12].slice(1) + ' dim '
 
-               op = [one," ",two," ",thr," ",fou," ",fiv," ",six," ",sev];
+               op = [one,two,thr,fou,fiv,six,sev];
                j++;
                break;
               }
