@@ -159,3 +159,88 @@ function chord1()
      document.querySelector('#M9c1').innerHTML = name.charAt(0).toUpperCase() + name.slice(1) +'add9 Chord: ' + M91 + '.';
     }
 }
+
+function modes()
+{
+ var chrom = ["A", "A#", "B", "C", "C#", "D", "D#","E","F","F#","G","G#"];
+ let name = document.querySelector('#notem').value;
+ var j = 0
+ for (var i = 0; i < chrom.length; i++)
+     {
+      if (name.charAt(0).toUpperCase() + name.slice(1) === chrom[i])
+         {
+           var Ionian = [chrom[(i)%12].charAt(0).toUpperCase() + chrom[(i)%12].slice(1) + ' ',
+                         chrom[(i+2)%12].charAt(0).toLowerCase() + chrom[(i+2)%12].slice(1) + ' ',
+                         chrom[(i+4)%12].charAt(0).toLowerCase() + chrom[(i+4)%12].slice(1) + ' ',
+                         chrom[(i+5)%12].charAt(0).toUpperCase() + chrom[(i+5)%12].slice(1) + ' ',
+                         chrom[(i+7)%12].charAt(0).toUpperCase() + chrom[(i+7)%12].slice(1) + ' ',
+                         chrom[(i+9)%12].charAt(0).toLowerCase() + chrom[(i+9)%12].slice(1) + ' ',
+                         chrom[(i+11)%12].charAt(0).toLowerCase() + chrom[(i+11)%12].slice(1) + ' dim ' ];
+           
+           var Dorian = [chrom[(i)%12].charAt(0).toUpperCase() + chrom[(i)%12].slice(1) + ' ',
+                         chrom[(i+2)%12].charAt(0).toLowerCase() + chrom[(i+2)%12].slice(1) + ' ',
+                         chrom[(i+3)%12].charAt(0).toLowerCase() + chrom[(i+3)%12].slice(1) + ' ',
+                         chrom[(i+5)%12].charAt(0).toUpperCase() + chrom[(i+5)%12].slice(1) + ' ',
+                         chrom[(i+7)%12].charAt(0).toUpperCase() + chrom[(i+7)%12].slice(1) + ' ',
+                         chrom[(i+9)%12].charAt(0).toLowerCase() + chrom[(i+9)%12].slice(1) + ' ',
+                         chrom[(i+10)%12].charAt(0).toLowerCase() + chrom[(i+10)%12].slice(1) + ' dim ' ];
+          
+           var Phrygian = [chrom[(i)%12].charAt(0).toUpperCase() + chrom[(i)%12].slice(1) + ' ',
+                         chrom[(i+1)%12].charAt(0).toLowerCase() + chrom[(i+1)%12].slice(1) + ' ',
+                         chrom[(i+3)%12].charAt(0).toLowerCase() + chrom[(i+3)%12].slice(1) + ' ',
+                         chrom[(i+5)%12].charAt(0).toUpperCase() + chrom[(i+5)%12].slice(1) + ' ',
+                         chrom[(i+7)%12].charAt(0).toUpperCase() + chrom[(i+7)%12].slice(1) + ' ',
+                         chrom[(i+8)%12].charAt(0).toLowerCase() + chrom[(i+8)%12].slice(1) + ' ',
+                         chrom[(i+10)%12].charAt(0).toLowerCase() + chrom[(i+10)%12].slice(1) + ' dim ' ];
+           
+          var Lydian = [chrom[(i)%12].charAt(0).toUpperCase() + chrom[(i)%12].slice(1) + ' ',
+                         chrom[(i+2)%12].charAt(0).toLowerCase() + chrom[(i+2)%12].slice(1) + ' ',
+                         chrom[(i+4)%12].charAt(0).toLowerCase() + chrom[(i+4)%12].slice(1) + ' ',
+                         chrom[(i+6)%12].charAt(0).toUpperCase() + chrom[(i+6)%12].slice(1) + ' ',
+                         chrom[(i+7)%12].charAt(0).toUpperCase() + chrom[(i+7)%12].slice(1) + ' ',
+                         chrom[(i+9)%12].charAt(0).toLowerCase() + chrom[(i+9)%12].slice(1) + ' ',
+                         chrom[(i+11)%12].charAt(0).toLowerCase() + chrom[(i+11)%12].slice(1) + ' dim ' ];
+          
+          var Mixolydian = [chrom[(i)%12].charAt(0).toUpperCase() + chrom[(i)%12].slice(1) + ' ',
+                         chrom[(i+2)%12].charAt(0).toLowerCase() + chrom[(i+2)%12].slice(1) + ' ',
+                         chrom[(i+4)%12].charAt(0).toLowerCase() + chrom[(i+4)%12].slice(1) + ' ',
+                         chrom[(i+5)%12].charAt(0).toUpperCase() + chrom[(i+5)%12].slice(1) + ' ',
+                         chrom[(i+7)%12].charAt(0).toUpperCase() + chrom[(i+7)%12].slice(1) + ' ',
+                         chrom[(i+9)%12].charAt(0).toLowerCase() + chrom[(i+9)%12].slice(1) + ' ',
+                         chrom[(i+10)%12].charAt(0).toLowerCase() + chrom[(i+10)%12].slice(1) + ' dim ' ];
+          
+          var Aeolian = [chrom[(i)%12].charAt(0).toUpperCase() + chrom[(i)%12].slice(1) + ' ',
+                         chrom[(i+2)%12].charAt(0).toLowerCase() + chrom[(i+2)%12].slice(1) + ' ',
+                         chrom[(i+3)%12].charAt(0).toLowerCase() + chrom[(i+3)%12].slice(1) + ' ',
+                         chrom[(i+5)%12].charAt(0).toUpperCase() + chrom[(i+5)%12].slice(1) + ' ',
+                         chrom[(i+7)%12].charAt(0).toUpperCase() + chrom[(i+7)%12].slice(1) + ' ',
+                         chrom[(i+8)%12].charAt(0).toLowerCase() + chrom[(i+8)%12].slice(1) + ' ',
+                         chrom[(i+10)%12].charAt(0).toLowerCase() + chrom[(i+10)%12].slice(1) + ' dim ' ];
+          
+          var Locrian = [chrom[(i)%12].charAt(0).toUpperCase() + chrom[(i)%12].slice(1) + ' ',
+                         chrom[(i+1)%12].charAt(0).toLowerCase() + chrom[(i+1)%12].slice(1) + ' ',
+                         chrom[(i+3)%12].charAt(0).toLowerCase() + chrom[(i+3)%12].slice(1) + ' ',
+                         chrom[(i+5)%12].charAt(0).toUpperCase() + chrom[(i+5)%12].slice(1) + ' ',
+                         chrom[(i+6)%12].charAt(0).toUpperCase() + chrom[(i+6)%12].slice(1) + ' ',
+                         chrom[(i+8)%12].charAt(0).toLowerCase() + chrom[(i+8)%12].slice(1) + ' ',
+                         chrom[(i+10)%12].charAt(0).toLowerCase() + chrom[(i+10)%12].slice(1) + ' dim ' ];
+          
+           j++;
+           break;
+          }
+      }
+ if (name === "" || j === 0)
+    {
+     document.querySelector('#I').innerHTML = 'Enter Correct Note';
+    }
+ else
+    {
+     document.querySelector('#I').innerHTML = name.charAt(0).toUpperCase() + name.slice(1) +' Ionian: ' + Ionian + '';
+     document.querySelector('#D').innerHTML = name.charAt(0).toUpperCase() + name.slice(1) +' Dorian: ' + Dorian + '';
+     document.querySelector('#P').innerHTML = name.charAt(0).toUpperCase() + name.slice(1) +' Phrygian: ' + Phrygian + '';
+     document.querySelector('#L').innerHTML = name.charAt(0).toUpperCase() + name.slice(1) +' Lydian: ' + Lydian + '';
+     document.querySelector('#M').innerHTML = name.charAt(0).toUpperCase() + name.slice(1) +'Mixolydian: ' + Mixolydian + '';
+     document.querySelector('#A').innerHTML = name.charAt(0).toUpperCase() + name.slice(1) +'Aeolian: ' + Aeolian + '';
+     document.querySelector('#Lo').innerHTML = name.charAt(0).toUpperCase() + name.slice(1) +'Locrian: ' + Locrian + '';
+    }
+}
