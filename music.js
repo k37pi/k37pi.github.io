@@ -239,8 +239,8 @@ function modes()
      document.querySelector('#D').innerHTML = name.charAt(0).toUpperCase() + name.slice(1) +' Dorian: ' + Dorian + '';
      document.querySelector('#P').innerHTML = name.charAt(0).toUpperCase() + name.slice(1) +' Phrygian: ' + Phrygian + '';
      document.querySelector('#L').innerHTML = name.charAt(0).toUpperCase() + name.slice(1) +' Lydian: ' + Lydian + '';
-     document.querySelector('#M').innerHTML = name.charAt(0).toUpperCase() + name.slice(1) +'Mixolydian: ' + Mixolydian + '';
-     document.querySelector('#A').innerHTML = name.charAt(0).toUpperCase() + name.slice(1) +'Aeolian: ' + Aeolian + '';
-     document.querySelector('#Lo').innerHTML = name.charAt(0).toUpperCase() + name.slice(1) +'Locrian: ' + Locrian + '';
+     document.querySelector('#M').innerHTML = name.charAt(0).toUpperCase() + name.slice(1) +' Mixolydian: ' + Mixolydian + '';
+     document.querySelector('#A').innerHTML = name.charAt(0).toUpperCase() + name.slice(1) +' Aeolian: ' + Aeolian + '';
+     document.querySelector('#Lo').innerHTML = name.charAt(0).toUpperCase() + name.slice(1) +' Locrian: ' + Locrian + '';
     }
 }
