@@ -176,7 +176,7 @@ function modes()
                          chrom[(i+7)%12].charAt(0).toUpperCase() + chrom[(i+7)%12].slice(1) + ' ',
                          chrom[(i+9)%12].charAt(0).toLowerCase() + chrom[(i+9)%12].slice(1) + ' ',
                          chrom[(i+11)%12].charAt(0).toLowerCase() + chrom[(i+11)%12].slice(1) + ' dim ',
-                       chrom[(i)%12].charAt(0).toUpperCase() + chrom[(i)%12].slice(1) +'Major or '+chrom[(i-3)%12].charAt(0).toLowerCase() + chrom[(i-3)%12].slice(1) + ' Minor'];
+                         chrom[(i)%12].charAt(0).toUpperCase() + chrom[(i)%12].slice(1) +'Major or '+chrom[(i-3+12)%12].charAt(0).toLowerCase() + chrom[(i-3+12)%12].slice(1) + ' Minor'];
            
            var Dorian = [chrom[(i)%12].charAt(0).toLowerCase() + chrom[(i)%12].slice(1) + ' ',
                          chrom[(i+2)%12].charAt(0).toLowerCase() + chrom[(i+2)%12].slice(1) + ' dim ' ,
@@ -184,7 +184,9 @@ function modes()
                          chrom[(i+5)%12].charAt(0).toLowerCase() + chrom[(i+5)%12].slice(1) + ' ',
                          chrom[(i+7)%12].charAt(0).toLowerCase() + chrom[(i+7)%12].slice(1) + ' ',
                          chrom[(i+9)%12].charAt(0).toUpperCase() + chrom[(i+9)%12].slice(1) + ' ',
-                         chrom[(i+10)%12].charAt(0).toUpperCase() + chrom[(i+10)%12].slice(1)];
+                         chrom[(i+10)%12].charAt(0).toUpperCase() + chrom[(i+10)%12].slice(1),
+                         chrom[(i-2+12)%12].charAt(0).toUpperCase() + chrom[(i-2+12)%12].slice(1) +'Major or '+chrom[(i-5+12)%12].charAt(0).toLowerCase() + chrom[(i-5+12)%12].slice(1) + ' Minor'];
+
           
            var Phrygian = [chrom[(i)%12].charAt(0).toLowerCase() + chrom[(i)%12].slice(1) + ' ',
                          chrom[(i+1)%12].charAt(0).toLowerCase() + chrom[(i+1)%12].slice(1) + ' dim ' ,
@@ -192,7 +194,8 @@ function modes()
                          chrom[(i+5)%12].charAt(0).toLowerCase() + chrom[(i+5)%12].slice(1) + ' ',
                          chrom[(i+7)%12].charAt(0).toLowerCase() + chrom[(i+7)%12].slice(1) + ' ',
                          chrom[(i+8)%12].charAt(0).toUpperCase() + chrom[(i+8)%12].slice(1) + ' ',
-                         chrom[(i+10)%12].charAt(0).toUpperCase() + chrom[(i+10)%12].slice(1)];
+                         chrom[(i+10)%12].charAt(0).toUpperCase() + chrom[(i+10)%12].slice(1),
+                         chrom[(i-4+12)%12].charAt(0).toUpperCase() + chrom[(i-4+12)%12].slice(1) +'Major or '+chrom[(i-7+12)%12].charAt(0).toLowerCase() + chrom[(i-7+12)%12].slice(1) + ' Minor'];
            
           var Lydian = [chrom[(i)%12].charAt(0).toUpperCase() + chrom[(i)%12].slice(1) + ' ',
                          chrom[(i+2)%12].charAt(0).toLowerCase() + chrom[(i+2)%12].slice(1) + ' ',
@@ -200,7 +203,9 @@ function modes()
                          chrom[(i+6)%12].charAt(0).toUpperCase() + chrom[(i+6)%12].slice(1) + ' ',
                          chrom[(i+7)%12].charAt(0).toUpperCase() + chrom[(i+7)%12].slice(1) + ' ',
                          chrom[(i+9)%12].charAt(0).toLowerCase() + chrom[(i+9)%12].slice(1) + ' ',
-                         chrom[(i+11)%12].charAt(0).toLowerCase() + chrom[(i+11)%12].slice(1) + ' dim ' ];
+                         chrom[(i+11)%12].charAt(0).toLowerCase() + chrom[(i+11)%12].slice(1) + ' dim ',
+                         chrom[(i-5+12)%12].charAt(0).toUpperCase() + chrom[(i-5+12)%12].slice(1) +'Major or '+chrom[(i-8+12)%12].charAt(0).toLowerCase() + chrom[(i-8+12)%12].slice(1) + ' Minor'];
+                        
           
           var Mixolydian = [chrom[(i)%12].charAt(0).toUpperCase() + chrom[(i)%12].slice(1) + ' ',
                          chrom[(i+2)%12].charAt(0).toLowerCase() + chrom[(i+2)%12].slice(1) + ' ',
@@ -208,7 +213,8 @@ function modes()
                          chrom[(i+5)%12].charAt(0).toUpperCase() + chrom[(i+5)%12].slice(1) + ' ',
                          chrom[(i+7)%12].charAt(0).toUpperCase() + chrom[(i+7)%12].slice(1) + ' ',
                          chrom[(i+9)%12].charAt(0).toLowerCase() + chrom[(i+9)%12].slice(1) + ' ',
-                         chrom[(i+10)%12].charAt(0).toLowerCase() + chrom[(i+10)%12].slice(1) + ' dim ' ];
+                         chrom[(i+10)%12].charAt(0).toLowerCase() + chrom[(i+10)%12].slice(1) + ' dim ',
+                         chrom[(i-7+12)%12].charAt(0).toUpperCase() + chrom[(i-7+12)%12].slice(1) +'Major or '+chrom[(i-10+12)%12].charAt(0).toLowerCase() + chrom[(i-10+12)%12].slice(1) + ' Minor'];
           
           var Aeolian = [chrom[(i)%12].charAt(0).toLowerCase() + chrom[(i)%12].slice(1) + ' ',
                          chrom[(i+2)%12].charAt(0).toLowerCase() + chrom[(i+2)%12].slice(1) + ' dim ' ,
@@ -216,7 +222,8 @@ function modes()
                          chrom[(i+5)%12].charAt(0).toLowerCase() + chrom[(i+5)%12].slice(1) + ' ',
                          chrom[(i+7)%12].charAt(0).toLowerCase() + chrom[(i+7)%12].slice(1) + ' ',
                          chrom[(i+8)%12].charAt(0).toUpperCase() + chrom[(i+8)%12].slice(1) + ' ',
-                         chrom[(i+10)%12].charAt(0).toUpperCase() + chrom[(i+10)%12].slice(1)];
+                         chrom[(i+10)%12].charAt(0).toUpperCase() + chrom[(i+10)%12].slice(1),
+                         chrom[(i-9+12)%12].charAt(0).toUpperCase() + chrom[(i-9+12)%12].slice(1) +'Major or '+chrom[(i-12+12)%12].charAt(0).toLowerCase() + chrom[(i-12+12)%12].slice(1) + ' Minor'];
           
           var Locrian = [chrom[(i)%12].charAt(0).toUpperCase() + chrom[(i)%12].slice(1) + ' ',
                          chrom[(i+1)%12].charAt(0).toLowerCase() + chrom[(i+1)%12].slice(1) + ' ',
@@ -224,7 +231,9 @@ function modes()
                          chrom[(i+5)%12].charAt(0).toUpperCase() + chrom[(i+5)%12].slice(1) + ' ',
                          chrom[(i+6)%12].charAt(0).toUpperCase() + chrom[(i+6)%12].slice(1) + ' ',
                          chrom[(i+8)%12].charAt(0).toLowerCase() + chrom[(i+8)%12].slice(1) + ' ',
-                         chrom[(i+10)%12].charAt(0).toLowerCase() + chrom[(i+10)%12].slice(1) + ' dim ' ];
+                         chrom[(i+10)%12].charAt(0).toLowerCase() + chrom[(i+10)%12].slice(1) + ' dim ',
+                         chrom[(i-11+12)%12].charAt(0).toUpperCase() + chrom[(i-11+12)%12].slice(1) +'Major or '+chrom[(i-14+24)%12].charAt(0).toLowerCase() + chrom[(i-14+24)%12].slice(1) + ' Minor'];
+                         
           
            j++;
            break;
