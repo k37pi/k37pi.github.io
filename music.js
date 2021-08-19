@@ -175,23 +175,24 @@ function modes()
                          chrom[(i+5)%12].charAt(0).toUpperCase() + chrom[(i+5)%12].slice(1) + ' ',
                          chrom[(i+7)%12].charAt(0).toUpperCase() + chrom[(i+7)%12].slice(1) + ' ',
                          chrom[(i+9)%12].charAt(0).toLowerCase() + chrom[(i+9)%12].slice(1) + ' ',
-                         chrom[(i+11)%12].charAt(0).toLowerCase() + chrom[(i+11)%12].slice(1) + ' dim ' ];
+                         chrom[(i+11)%12].charAt(0).toLowerCase() + chrom[(i+11)%12].slice(1) + ' dim ',
+                       chrom[(i)%12].charAt(0).toUpperCase() + chrom[(i)%12].slice(1) +'Major or '+chrom[(i-3)%12].charAt(0).toLowerCase() + chrom[(i-3)%12].slice(1) + ' Minor'];
            
-           var Dorian = [chrom[(i)%12].charAt(0).toUpperCase() + chrom[(i)%12].slice(1) + ' ',
-                         chrom[(i+2)%12].charAt(0).toLowerCase() + chrom[(i+2)%12].slice(1) + ' ',
-                         chrom[(i+3)%12].charAt(0).toLowerCase() + chrom[(i+3)%12].slice(1) + ' ',
-                         chrom[(i+5)%12].charAt(0).toUpperCase() + chrom[(i+5)%12].slice(1) + ' ',
-                         chrom[(i+7)%12].charAt(0).toUpperCase() + chrom[(i+7)%12].slice(1) + ' ',
-                         chrom[(i+9)%12].charAt(0).toLowerCase() + chrom[(i+9)%12].slice(1) + ' ',
-                         chrom[(i+10)%12].charAt(0).toLowerCase() + chrom[(i+10)%12].slice(1) + ' dim ' ];
+           var Dorian = [chrom[(i)%12].charAt(0).toLowerCase() + chrom[(i)%12].slice(1) + ' ',
+                         chrom[(i+2)%12].charAt(0).toLowerCase() + chrom[(i+2)%12].slice(1) + ' dim ' ,
+                         chrom[(i+3)%12].charAt(0).toUpperCase() + chrom[(i+3)%12].slice(1) + ' ',
+                         chrom[(i+5)%12].charAt(0).toLowerCase() + chrom[(i+5)%12].slice(1) + ' ',
+                         chrom[(i+7)%12].charAt(0).toLowerCase() + chrom[(i+7)%12].slice(1) + ' ',
+                         chrom[(i+9)%12].charAt(0).toUpperCase() + chrom[(i+9)%12].slice(1) + ' ',
+                         chrom[(i+10)%12].charAt(0).toUpperCase() + chrom[(i+10)%12].slice(1)];
           
-           var Phrygian = [chrom[(i)%12].charAt(0).toUpperCase() + chrom[(i)%12].slice(1) + ' ',
-                         chrom[(i+1)%12].charAt(0).toLowerCase() + chrom[(i+1)%12].slice(1) + ' ',
-                         chrom[(i+3)%12].charAt(0).toLowerCase() + chrom[(i+3)%12].slice(1) + ' ',
-                         chrom[(i+5)%12].charAt(0).toUpperCase() + chrom[(i+5)%12].slice(1) + ' ',
-                         chrom[(i+7)%12].charAt(0).toUpperCase() + chrom[(i+7)%12].slice(1) + ' ',
-                         chrom[(i+8)%12].charAt(0).toLowerCase() + chrom[(i+8)%12].slice(1) + ' ',
-                         chrom[(i+10)%12].charAt(0).toLowerCase() + chrom[(i+10)%12].slice(1) + ' dim ' ];
+           var Phrygian = [chrom[(i)%12].charAt(0).toLowerCase() + chrom[(i)%12].slice(1) + ' ',
+                         chrom[(i+1)%12].charAt(0).toLowerCase() + chrom[(i+1)%12].slice(1) + ' dim ' ,
+                         chrom[(i+3)%12].charAt(0).toUpperCase() + chrom[(i+3)%12].slice(1) + ' ',
+                         chrom[(i+5)%12].charAt(0).toLowerCase() + chrom[(i+5)%12].slice(1) + ' ',
+                         chrom[(i+7)%12].charAt(0).toLowerCase() + chrom[(i+7)%12].slice(1) + ' ',
+                         chrom[(i+8)%12].charAt(0).toUpperCase() + chrom[(i+8)%12].slice(1) + ' ',
+                         chrom[(i+10)%12].charAt(0).toUpperCase() + chrom[(i+10)%12].slice(1)];
            
           var Lydian = [chrom[(i)%12].charAt(0).toUpperCase() + chrom[(i)%12].slice(1) + ' ',
                          chrom[(i+2)%12].charAt(0).toLowerCase() + chrom[(i+2)%12].slice(1) + ' ',
@@ -209,13 +210,13 @@ function modes()
                          chrom[(i+9)%12].charAt(0).toLowerCase() + chrom[(i+9)%12].slice(1) + ' ',
                          chrom[(i+10)%12].charAt(0).toLowerCase() + chrom[(i+10)%12].slice(1) + ' dim ' ];
           
-          var Aeolian = [chrom[(i)%12].charAt(0).toUpperCase() + chrom[(i)%12].slice(1) + ' ',
-                         chrom[(i+2)%12].charAt(0).toLowerCase() + chrom[(i+2)%12].slice(1) + ' ',
-                         chrom[(i+3)%12].charAt(0).toLowerCase() + chrom[(i+3)%12].slice(1) + ' ',
-                         chrom[(i+5)%12].charAt(0).toUpperCase() + chrom[(i+5)%12].slice(1) + ' ',
-                         chrom[(i+7)%12].charAt(0).toUpperCase() + chrom[(i+7)%12].slice(1) + ' ',
-                         chrom[(i+8)%12].charAt(0).toLowerCase() + chrom[(i+8)%12].slice(1) + ' ',
-                         chrom[(i+10)%12].charAt(0).toLowerCase() + chrom[(i+10)%12].slice(1) + ' dim ' ];
+          var Aeolian = [chrom[(i)%12].charAt(0).toLowerCase() + chrom[(i)%12].slice(1) + ' ',
+                         chrom[(i+2)%12].charAt(0).toLowerCase() + chrom[(i+2)%12].slice(1) + ' dim ' ,
+                         chrom[(i+3)%12].charAt(0).toUpperCase() + chrom[(i+3)%12].slice(1) + ' ',
+                         chrom[(i+5)%12].charAt(0).toLowerCase() + chrom[(i+5)%12].slice(1) + ' ',
+                         chrom[(i+7)%12].charAt(0).toLowerCase() + chrom[(i+7)%12].slice(1) + ' ',
+                         chrom[(i+8)%12].charAt(0).toUpperCase() + chrom[(i+8)%12].slice(1) + ' ',
+                         chrom[(i+10)%12].charAt(0).toUpperCase() + chrom[(i+10)%12].slice(1)];
           
           var Locrian = [chrom[(i)%12].charAt(0).toUpperCase() + chrom[(i)%12].slice(1) + ' ',
                          chrom[(i+1)%12].charAt(0).toLowerCase() + chrom[(i+1)%12].slice(1) + ' ',
