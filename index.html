@@ -12,15 +12,29 @@
         <title>KP</title>
     </head>
 
+    <!--
+    <script>
+    var w = window.innerWidth;
+    var h = window.innerHeight;
+    
+    var x = document.getElementById("demo");
+    x.innerHTML = "Browser width: " + w + ", height: " + h + ".";
+    </script>
+    -->
+    
     <body style="background-image: url('../img/home.jpg');  background-repeat: no-repeat;   background-size: 100% 100%;" id = "bg">
         <h1 style="color:pink" id = "mainhead">Hello, is there anybody in there ?</h1>
         <div id="go"></div>
     <button id = "nod">nod</button>
     <script>
+             var w = window.innerWidth;
+        var h = window.innerHeight;
+       
             var T = true;
             document.querySelector("#nod").onclick = function(){
                 if(T){
                 document.querySelector("body").style.backgroundImage = "url('img/bg6.jpg')";
+                document.querySelector("body").style.backgroundSize=w+h;
                 document.querySelector("#mainhead").textContent = "Is there anyone at";
                 document.querySelector("#nod").textContent = "home?"
                 T = false;
