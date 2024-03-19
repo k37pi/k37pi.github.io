@@ -22,13 +22,13 @@
     </script>
     -->
     
-    <body style="background-image: url('../img/home.jpg');  background-repeat: no-repeat;   background-size: 100% 100%;" id = "bg">
+    <body style="background-image: url('../img/home.jpg');  background-repeat: no-repeat;   background-size: auto;" id = "bg">
         <h1 style="color:pink" id = "mainhead">Hello, is there anybody in there ?</h1>
         <div id="go"></div>
-    <button style="position: absolute; bottom: 0;" id = "nod">nod</button>
+    <button id = "nod">nod</button>
     <script>
-             var w = window.innerWidth;
-        var h = window.innerHeight;
+            var w = window.innerWidth;
+            var h = window.innerHeight;
        
             var T = true;
             document.querySelector("#nod").onclick = function(){
